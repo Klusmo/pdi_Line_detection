@@ -48,7 +48,8 @@ def main():
         lines = dl.get_lines(img)
 
         # lines = dl.get_hough_p(img)
-        dl.draw_lines(img, lines)
+        img = dl.pre_processing(img)
+        # dl.draw_lines(img, lines)
 
         show_video(img)
         # out_img.append(img)
